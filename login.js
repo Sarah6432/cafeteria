@@ -63,7 +63,7 @@ loginForm.addEventListener('submit', async (e) => {
     }
 });
 
-const forceLogin = true; // ou defina com base na página atual
+const forceLogin = true; 
 
 if (!forceLogin) {
     onAuthStateChanged(auth, (user) => {

@@ -140,7 +140,7 @@ document.getElementById("logoutBtn").addEventListener("click", () => {
     signOut(auth)
         .then(() => {
            
-            window.location.href = "login.html";
+            window.location.href = "index.html";
         })
         .catch((error) => {
             console.error("Erro ao sair:", error);
