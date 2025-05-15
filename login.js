@@ -63,13 +63,17 @@ loginForm.addEventListener('submit', async (e) => {
     }
 });
 
+const forceLogin = true; // ou defina com base na página atual
 
-onAuthStateChanged(auth, (user) => {
-    if (user) {
-        if (sessionStorage.getItem('isAdmin') === 'true') {
-            window.location.href = ADMIN_CREDENTIALS.redirectPage;
-        } else {
-            window.location.href = 'cardapio.html';
+if (!forceLogin) {
+    onAuthStateChanged(auth, (user) => {
+        if (user) {
+            if (sessionStorage.getItem('isAdmin') === 'true') {
+                window.location.href = ADMIN_CREDENTIALS.redirectPage;
+            } else {
+                window.location.href = 'cardapio.html';
+            }
         }
-    }
-});
+    });
+}
+
