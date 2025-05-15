@@ -67,7 +67,7 @@ document.getElementById('registerForm').addEventListener('submit', async (e) => 
         });
 
         alert('Cadastro realizado com sucesso!\nVocê será redirecionado para o login.');
-        window.location.href = 'login.html';
+        window.location.href = 'index.html';
 
     } catch (error) {
         console.error("Erro no cadastro:", error);
