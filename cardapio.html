@@ -21,7 +21,39 @@
     <div class="produtos-container">
     </div>
 
+    <div class="comentarios-container">
+        <h2>Deixe seu comentário</h2>
+        <form id="form-comentario">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="comentario">Comentário:</label>
+                <textarea id="comentario" name="comentario" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="avaliacao">Avaliação:</label>
+                <select id="avaliacao" name="avaliacao" required>
+                    <option value="">Selecione...</option>
+                    <option value="5">⭐️⭐️⭐️⭐️⭐️</option>
+                    <option value="4">⭐️⭐️⭐️⭐️</option>
+                    <option value="3">⭐️⭐️⭐️</option>
+                    <option value="2">⭐️⭐️</option>
+                    <option value="1">⭐️</option>
+                </select>
+            </div>
+            <button type="submit" class="btn-enviar">Enviar Comentário</button>
+        </form>
+        
+        <div id="lista-comentarios">
+            <h3>Comentários dos Clientes</h3>
+           
+        </div>
+    </div>
+
     <script type="module" src="cardapio.js"></script>
     <script type="module" src="carrinho.js"></script>
+    <script type="module" src="comentarios.js"></script>
 </body>
 </html>

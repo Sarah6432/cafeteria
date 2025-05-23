@@ -236,3 +236,97 @@ body {
      margin-right: 0.5%;
      color: #000;
 }
+/* Estilos para a seção de comentários */
+.comentarios-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comentarios-container h2 {
+    color: #5d4037;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #5d4037;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d7ccc8;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.btn-enviar {
+    background-color: #6d4c41;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #5d4037;
+}
+
+#lista-comentarios {
+    margin-top: 30px;
+}
+
+.comentario-item {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.comentario-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.comentario-cabecalho strong {
+    color: #3d3d3d;
+}
+
+.avaliacao {
+    color: #ffab00;
+    margin: 0 10px;
+}
+
+.data {
+    color: #757575;
+    font-size: 0.9em;
+}
+
+.comentario-texto {
+    color: #424242;
+    line-height: 1.5;
+}
